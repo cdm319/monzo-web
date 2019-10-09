@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space=between;
+
+    font-size: 1rem;
+    color: white;
+    background-color: #282c34;
+    padding: 0 10%;
+    height: 4rem;
+}
+
+.logo {
+    height: 2rem;
+    margin-right: .5rem;
+}
+
+.title {
+    display: block;
+    font-size: 1rem;
+}
