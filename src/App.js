@@ -4,12 +4,27 @@ import './App.css';
 
 function App() {
   return (
-    <div className="app">
+    <>
       <Header />
-      <div className="main">
+      <main className="main">
+        <section className="content">
+            <h1>Welcome, &lt;name&gt;!</h1>
 
-      </div>
-    </div>
+            <section className="grid-col-2">
+                <section className="account-summary">
+                    <h3>Account Summary</h3>
+                </section>
+                <section className="statement-summary">
+                    <h3>Statement Summary</h3>
+                </section>
+            </section>
+
+            <section className="transactions">
+                <h3>Recent Transactions</h3>
+            </section>
+        </section>
+      </main>
+    </>
   );
 }
 

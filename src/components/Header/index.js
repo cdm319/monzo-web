@@ -5,8 +5,17 @@ import './Header.css';
 
 const Header = () => (
     <header className="header">
-        <img src={logo} className="logo" alt="Bank X" />
-        <h1 className="title">Bank X</h1>
+        <section className="header-layout">
+            <section className="logo-container">
+                <img src={logo} className="logo" alt="credito" />
+            </section>
+            <ul className="nav-bar">
+                <li>Dashboard</li>
+                <li>Statements</li>
+                <li>Payments</li>
+                <li>My Account</li>
+            </ul>
+        </section>
     </header>
 );
 
