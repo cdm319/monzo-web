@@ -8,6 +8,7 @@ body {
   font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f0f0f0;
 }
 
 code {
