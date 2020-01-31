@@ -17,7 +17,7 @@ const Main = styled.section`
 const Columns = styled.section`
     margin: 1rem 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr auto;
     grid-gap: 1rem;
     justify-content: space-between;
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
-    background-color: #f76c6c;
+    //background-color: #f76c6c;
     padding: 1rem;
 `;
 

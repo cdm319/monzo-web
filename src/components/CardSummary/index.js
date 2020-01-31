@@ -1,15 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import Card from '../Card'
+import Link from '../Link';
 
 const StyledSection = styled.section`
-    background-color: #a8d0e6;
-    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align:center;
 `;
 
 const CardSummary = () => {
     return (
         <StyledSection>
-            <h3>Card Summary</h3>
+            <Card cardNumber='4242 4242 4242 4440' expiryDate='12/21' name='Mr J Bloggs' />
+            <Link href='#'>Switch card</Link>
         </StyledSection>
     );
 };

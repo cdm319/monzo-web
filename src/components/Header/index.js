@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from './logo.svg';
+import Logo from '../Logo';
 
 const StyledHeader = styled.header`
     background-color: #24305e;
@@ -12,11 +12,6 @@ const StyledHeader = styled.header`
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-`;
-
-const Logo = styled.img`
-    height: 2rem;
-    margin-right: .5rem;
 `;
 
 const NavBar = styled.ul`
@@ -33,7 +28,7 @@ const NavItem = styled.li`
 
 const Header = () => (
     <StyledHeader>
-        <Logo src={logo} alt="credito" />
+        <Logo />
         <NavBar>
             <NavItem>Dashboard</NavItem>
             <NavItem>Statements</NavItem>
