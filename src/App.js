@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import {getCustomer} from './api';
+
 import Header from './components/Header';
+import AccountSummary from './components/AccountSummary';
+import CardSummary from "./components/CardSummary";
+import {getCustomer} from './api';
 
 const Main = styled.section`
     margin: 4rem auto;
@@ -33,12 +36,8 @@ const App = () => {
                 <h1>Welcome, {customer.first_name}!</h1>
 
                 <Columns>
-                    <section className="account-summary">
-                        <h3>Account Summary</h3>
-                    </section>
-                    <section className="statement-summary">
-                        <h3>Statement Summary</h3>
-                    </section>
+                    <AccountSummary />
+                    <CardSummary />
                 </Columns>
 
                 <section className="transactions">
