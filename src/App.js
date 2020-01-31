@@ -15,9 +15,9 @@ const Main = styled.section`
 `;
 
 const Columns = styled.section`
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr auto;
     grid-gap: 1rem;
     justify-content: space-between;
 `;
@@ -34,10 +34,9 @@ const App = () => {
         <>
             <Header/>
             <Main>
-                <h1>Welcome, {customer.first_name}!</h1>
-
                 <Columns>
                     <AccountSummary />
+                    <section>Payments</section>
                     <CardSummary />
                 </Columns>
 
