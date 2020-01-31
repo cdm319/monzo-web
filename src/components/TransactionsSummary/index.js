@@ -2,16 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
-    background-color: #f76c6c;
+    background-color: #f8e9a1;
     padding: 1rem;
 `;
 
-const AccountSummary = () => {
+const TransactionsSummary = () => {
     return (
         <StyledSection>
-            <h3>Account Summary</h3>
+            <h3>Transactions Summary</h3>
         </StyledSection>
     );
 };
 
-export default AccountSummary;
+export default TransactionsSummary;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import logo from './logo.svg';
 
 const StyledHeader = styled.header`
-    background-color: #282c34;
+    background-color: #24305e;
     color: white;
     
     padding: 0 10%;

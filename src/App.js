@@ -4,17 +4,18 @@ import styled from 'styled-components';
 import Header from './components/Header';
 import AccountSummary from './components/AccountSummary';
 import CardSummary from "./components/CardSummary";
+import TransactionsSummary from "./components/TransactionsSummary";
 import {getCustomer} from './api';
 
 const Main = styled.section`
     margin: 4rem auto;
-    padding: 1rem;
+    padding: 2rem;
     width: 80%;
     background-color: #fff;
 `;
 
 const Columns = styled.section`
-    margin: 2rem 0;
+    margin: 1rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -40,9 +41,7 @@ const App = () => {
                     <CardSummary />
                 </Columns>
 
-                <section className="transactions">
-                    <h3>Recent Transactions</h3>
-                </section>
+                <TransactionsSummary />
             </Main>
         </>
     );
