@@ -10,7 +10,7 @@ const CardContainer = styled.div`
     margin: 1rem auto;
     padding: 1rem;
     
-    background-color: #4285f4;
+    background-color: #ED5656;
     color: #fff;
     
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;

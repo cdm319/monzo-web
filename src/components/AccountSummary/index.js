@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ProgressWheel from "../ProgressWheel";
 
 const StyledSection = styled.section`
     padding: 1rem;
@@ -23,9 +24,10 @@ const AccountSummary = () => {
     return (
         <StyledSection>
             <table>
+                <tbody>
                 <tr>
                     <td colSpan={2}>
-                        x
+                        <ProgressWheel size={200} progress={60}/>
                     </td>
                 </tr>
                 <tr>
@@ -38,6 +40,7 @@ const AccountSummary = () => {
                         <p>Left</p>
                     </td>
                 </tr>
+                </tbody>
             </table>
         </StyledSection>
     );
