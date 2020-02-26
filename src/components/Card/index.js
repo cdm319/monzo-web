@@ -4,10 +4,10 @@ import Logo from '../Logo'
 
 const CardContainer = styled.div`
     position: relative;
-    width: 20rem;
-    height: 12rem;
+    width: 16rem;
+    height: 10rem;
     border-radius: .5rem;
-    margin: 1rem auto;
+    margin: 0 auto 1rem auto;
     padding: 1rem;
     
     background-color: #ED5656;

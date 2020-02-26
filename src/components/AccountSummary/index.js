@@ -2,9 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ProgressWheel from "../ProgressWheel";
 
-const StyledSection = styled.section`
-    padding: 1rem;
-    
+const StyledSection = styled.section`    
     table {
       font-size: 1.2rem;
       width: 100%;
