@@ -15,28 +15,29 @@ const StyledSection = styled.section`
         text-align: center;
         padding: 1rem;
         background-color: #fafafa;
-        //border: 1px solid #f0f0f0;
       }
     }
 `;
 
-const AccountSummary = () => {
+const AccountSummary = ( { accountData } ) => {
+    const { balance, creditLimit } = accountData;
+
     return (
         <StyledSection>
             <table>
                 <tbody>
                 <tr>
                     <td colSpan={2}>
-                        <ProgressWheel size={200} progress={60}/>
+                        <ProgressWheel size={200} progress={ (balance / creditLimit) * 100 }/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>&pound;1,243.26</h4>
+                        <h4>&pound;{ balance }</h4>
                         <p>Spent</p>
                     </td>
                     <td>
-                        <h4>&pound;3,756.74</h4>
+                        <h4>&pound;{ creditLimit - balance }</h4>
                         <p>Left</p>
                     </td>
                 </tr>

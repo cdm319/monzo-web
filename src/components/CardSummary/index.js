@@ -8,10 +8,12 @@ const StyledSection = styled.section`
     text-align:center;
 `;
 
-const CardSummary = () => {
+const CardSummary = ({ cardDetails }) => {
+    const { cardNumber, cardExpiry, cardName } = cardDetails;
+
     return (
         <StyledSection>
-            <Card cardNumber='4242 4242 4242 4440' expiryDate='12/21' name='Mr J Bloggs' />
+            <Card cardNumber={cardNumber} expiryDate={cardExpiry} name={cardName} />
             <Link href='#'>Switch card</Link>
         </StyledSection>
     );

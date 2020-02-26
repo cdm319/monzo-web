@@ -26,7 +26,11 @@ const App = () => {
     const [customer, setCustomer] = useState({});
 
     useEffect(() => {
-        const getData = async () => setCustomer(await getCustomer());
+        const getData = async () => {
+            const data = await getCustomer();
+            setCustomer(data);
+        };
+
         getData();
     }, []);
 
@@ -35,9 +39,9 @@ const App = () => {
             <Header/>
             <Main>
                 <Columns>
-                    <AccountSummary />
-                    <section>Payments</section>
-                    <CardSummary />
+                    { customer.account && <AccountSummary accountData={ customer.account }/> }
+                    <section>Payments {customer.first_name}</section>
+                    { customer.card && <CardSummary cardDetails={ customer.card }/> }
                 </Columns>
 
                 <TransactionsSummary />
